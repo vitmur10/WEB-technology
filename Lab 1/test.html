@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<HTML>
+<TITLE>Тест</TITLE>
+<BODY>
+<SCRIPT>
+    var score = 0;
+
+    // Перше запитання
+    var answer1 = confirm("2+2=4 ?");
+    if (answer1) {
+        alert("Правильно!");
+        score++;
+    } else {
+        alert("Помилка!");
+    }
+
+    // Повідомлення про правильну відповідь
+
+    // Друге запитання
+    var answer2 = confirm("2+3=5 ?");
+    if (!answer2) {
+        alert("Правильно!");
+        score++;
+    } else {
+        alert("Помилка!");
+    }
+
+    // Третє запитання
+    var answer3 = confirm("2+4=6 ?");
+    if (answer3) {
+        alert("Правильно!");
+        score++;
+    } else {
+        alert("Помилка!");
+    }
+
+    // Четверте запитання
+    var answer4 = prompt("2+2= ?");
+    if (parseInt(answer4) === 4) {
+        alert("Правильно!");
+        score++;
+    } else {
+        alert("Помилка!");
+    }
+
+    // П'яте запитання
+    var answer5 = prompt("2+3= ?");
+    if (parseInt(answer5) === 5) {
+        alert("Правильно!");
+        score++;
+    } else {
+        alert("Помилка!");
+    }
+
+    // Шосте запитання
+    var answer6 = prompt("2+4= ?");
+    if (parseInt(answer6) === 6) {
+        alert("Правильно!");
+        score++;
+    } else {
+        alert("Помилка!");
+    }
+
+    // Сьоме запитання
+    var answer7 = confirm("5+5=11 ?");
+    if (!answer7) {
+        alert("Правильно!");
+        score++;
+    } else {
+        alert("Помилка!");
+    }
+
+    // Восьме запитання
+    var answer8 = prompt("3+3= ?");
+    if (parseInt(answer8) === 6) {
+        alert("Правильно!");
+        score++;
+    } else {
+        alert("Помилка!");
+    }
+
+    if (score >= 7) {
+        alert("Чудово");
+    } else if (score >= 5) {
+        alert("Добре");
+    } else {
+        alert("Погано");
+    }
+
+    alert("Сума балів = " + score);
+</SCRIPT>
+</BODY>
+</HTML>
