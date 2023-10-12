@@ -11,4 +11,9 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
-console.log(`Кількість додатних елементів у масиві: ${positiveCount}`);
+// Створюємо елемент для відображення результату у браузері
+let resultElement = document.createElement("p");
+resultElement.textContent = `Кількість додатних елементів у масиві: ${positiveCount}`;
+
+// Додаємо елемент до body (або іншого відповідного контейнера)
+document.body.appendChild(resultElement);

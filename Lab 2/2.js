@@ -16,5 +16,9 @@ for (let i = 1; i < numbers.length; i++) {
     }
 }
 
-// Виводимо знайдене максимальне число
-console.log(`Максимальне число: ${maxNumber}`);
+// Створюємо елемент для відображення результату у браузері
+let resultElement = document.createElement("p");
+resultElement.textContent = `Максимальне число: ${maxNumber}`;
+
+// Додаємо елемент до body (або іншого відповідного контейнера)
+document.body.appendChild(resultElement);

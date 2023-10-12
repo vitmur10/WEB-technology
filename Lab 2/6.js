@@ -11,4 +11,9 @@ while (number > 0) {
     number = Math.floor(number / 10); // Видаляємо останню цифру з числа
 }
 
-console.log(`Перевернуте число: ${reversedNumber}`);
+// Створюємо елемент для відображення результату у браузері
+let resultElement = document.createElement("p");
+resultElement.textContent = `Перевернуте число: ${reversedNumber}`;
+
+// Додаємо елемент до body (або іншого відповідного контейнера)
+document.body.appendChild(resultElement);

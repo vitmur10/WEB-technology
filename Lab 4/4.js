@@ -1,4 +1,3 @@
-//Визначення назви року за давньояпонським календарем:
 // Зчитуємо задану дату (у форматі рік-місяць-день)
 let inputDate = new Date("1984-08-15");
 
@@ -15,4 +14,9 @@ let cycleYear = (year - 4) % 60;
 let subCycleIndex = Math.floor(cycleYear / 12);
 let animalIndex = cycleYear % 12;
 
-console.log(`Дата: ${inputDate.toDateString()}, Назва року за давньояпонським календарем: ${subCycleColors[subCycleIndex]} ${subCycleAnimals[animalIndex]}`);
+// Створюємо елемент для відображення результату у браузері
+let resultElement = document.createElement("p");
+resultElement.textContent = `Дата: ${inputDate.toDateString()}, Назва року за давньояпонським календарем: ${subCycleColors[subCycleIndex]} ${subCycleAnimals[animalIndex]}`;
+
+// Додаємо елемент до body (або іншого відповідного контейнера)
+document.body.appendChild(resultElement);

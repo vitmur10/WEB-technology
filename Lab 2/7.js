@@ -16,4 +16,9 @@ for (let ticketNumber = 100000; ticketNumber <= 999999; ticketNumber++) {
     }
 }
 
-console.log(`Кількість щасливих квитків: ${luckyTicketCount}`);
+// Створюємо елемент для відображення результату у браузері
+let resultElement = document.createElement("p");
+resultElement.textContent = `Кількість щасливих квитків: ${luckyTicketCount}`;
+
+// Додаємо елемент до body (або іншого відповідного контейнера)
+document.body.appendChild(resultElement);

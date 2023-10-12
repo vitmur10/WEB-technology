@@ -1,4 +1,3 @@
-//Визначення знаку зодіаку за датою народження:
 // Зчитуємо дату народження (у форматі рік-місяць-день)
 let birthDate = new Date("1995-07-15");
 
@@ -26,4 +25,9 @@ if (zodiacIndex === -1) {
     zodiacIndex = 0; // Якщо не знайдено, то останній знак
 }
 
-console.log(`Дата народження: ${birthDate.toDateString()}, Знак зодіаку: ${zodiacSigns[zodiacIndex]}`);
+// Створюємо елемент для відображення результату у браузері
+let resultElement = document.createElement("p");
+resultElement.textContent = `Дата народження: ${birthDate.toDateString()}, Знак зодіаку: ${zodiacSigns[zodiacIndex]}`;
+
+// Додаємо елемент до body (або іншого відповідного контейнера)
+document.body.appendChild(resultElement);

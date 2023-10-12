@@ -8,5 +8,9 @@ let outerRadius = parseFloat(prompt("Введіть радіус зовнішн�
 const pi = Math.PI;
 let area = pi * (outerRadius * outerRadius - innerRadius * innerRadius);
 
-// Виводимо обчислену площу кільця
-console.log(`Площа кільця з радіусами ${innerRadius} (внутрішній) і ${outerRadius} (зовнішній) дорівнює ${area}`);
+// Створюємо елемент для відображення результату у браузері
+let resultElement = document.createElement("p");
+resultElement.textContent = `Площа кільця з радіусами ${innerRadius} (внутрішній) і ${outerRadius} (зовнішній) дорівнює ${area}`;
+
+// Додаємо елемент до body (або іншого відповідного контейнера)
+document.body.appendChild(resultElement);

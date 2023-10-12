@@ -7,5 +7,9 @@ let b = parseFloat(prompt("Введіть довжину другого кате
 // Обчислюємо гіпотенузу за теоремою Піфагора
 let hypotenuse = Math.sqrt(a * a + b * b);
 
-// Виводимо обчислену гіпотенузу
-console.log(`Гіпотенуза за катетами ${a} і ${b} дорівнює ${hypotenuse}`);
+// Створюємо елемент для відображення результату у браузері
+let resultElement = document.createElement("p");
+resultElement.textContent = `Гіпотенуза за катетами ${a} і ${b} дорівнює ${hypotenuse}`;
+
+// Додаємо елемент до body (або іншого відповідного контейнера)
+document.body.appendChild(resultElement);

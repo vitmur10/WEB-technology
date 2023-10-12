@@ -17,4 +17,9 @@ if (x > 0 && y > 0) {
     quadrant = "на осях координат";
 }
 
-console.log(`Точка з координатами (${x}, ${y}) належить до ${quadrant} чверті.`);
+// Створюємо елемент для відображення результату у браузері
+let resultElement = document.createElement("p");
+resultElement.textContent = `Точка з координатами (${x}, ${y}) належить до ${quadrant} чверті.`;
+
+// Додаємо елемент до body (або іншого відповідного контейнера)
+document.body.appendChild(resultElement);
